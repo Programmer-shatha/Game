@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color:#3c4748;
+    --second-color:#208c8c;
+    --third-color:#cae9ea;
+}
+
+
+.rocket{
+     margin-top: -300px;
+    margin-left: 450px;
+    animation: spin 5s infinite linear; 
+  } 
+  
+   @keyframes spin {
+    0% {
+      transform: rotate(30deg);
+    }
+    100%{
+      transform: translateY(-400px);
+    }
+  }
+  
+  @media only screen and (max-width: 770px){
+    .rocket{
+      margin-top: -200px;
+    margin-left: 180px;
+  }
+  .rocket img{
+    width: 100px;
+    height: 100px;
+  }
+  } 
+
+
+.hed{
+    padding: 88px 0;
+  }
+.hed .text{
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 73px;
+  }
+
+
+
+  .card-ch{
+    margin-top: 20px;
+    margin-bottom: 100px;
+    margin-left: 80px;
+    background-image: url(img/IMG_1368\ \(1\).jpg);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 400px;
+    background-size: cover;
+    border: none;
+  }
+
+  @media (max-width: 480px) {
+    .card-ch{
+      margin-left: 130px;
+    }
+  }
+
+  .card-ch img{
+    margin-top: -120px;
+  }
+
+  .text-t{
+    font-weight: 800;
+    font-size: 68px;
+    line-height: 73px;
+    background-image: url(img/layout_6664324.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 72px;
+  }
+
+  @media (max-width: 480px) {
+    .text-t{
+      font-size: 48px;
+      padding-top: 20px;
+    }
+  }
+
+  .ch .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+  }
